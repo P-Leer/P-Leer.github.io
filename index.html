@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Peter Leer is a researcher in audio signal processing, speech enhancement, hearing technology, and machine learning for audio.">
+    <meta name="theme-color" content="#f4f1e8">
+
+    <title>Peter Leer — Audio signal processing researcher</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Peter Leer — Audio signal processing researcher">
+    <meta property="og:description" content="Research in speech enhancement, hearing technology, auditory modelling, and efficient machine learning for audio.">
+    <meta property="og:url" content="https://p-leer.github.io/">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Peter Leer",
+        "url": "https://p-leer.github.io/",
+        "jobTitle": "Scientist",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Eriksholm Research Centre",
+          "url": "https://www.eriksholm.com/"
+        },
+        "sameAs": [
+          "https://github.com/P-Leer",
+          "https://www.linkedin.com/in/peterleer/",
+          "https://dl.acm.org/profile/99661235269"
+        ],
+        "knowsAbout": [
+          "Audio signal processing",
+          "Speech enhancement",
+          "Hearing technology",
+          "Machine learning for audio",
+          "Auditory modelling"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Peter Leer, home">
+        <span class="wordmark-mark" aria-hidden="true">PL</span>
+        <span>Peter Leer</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#work">Selected work</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">Audio signal processing · Machine learning · Hearing</p>
+          <h1 id="hero-heading">Making intelligent audio systems listen <em>more carefully.</em></h1>
+          <p class="hero-intro">
+            I am a researcher working at the intersection of speech enhancement,
+            auditory modelling, and machine learning—developing efficient methods
+            for hearing technology that adapt to people and their surroundings.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://github.com/P-Leer" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <dl class="hero-meta">
+            <div>
+              <dt>Currently</dt>
+              <dd>Scientist, Eriksholm Research Centre</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>Denmark</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="signal-figure" aria-label="Abstract illustration of an audio signal passing through an adaptive model">
+          <div class="signal-label signal-label-in">signal</div>
+          <div class="signal-label signal-label-model">context</div>
+          <div class="signal-label signal-label-out">enhanced</div>
+
+          <svg viewBox="0 0 760 520" role="img" aria-labelledby="signal-title signal-desc">
+            <title id="signal-title">Adaptive signal transformation</title>
+            <desc id="signal-desc">Three layered waveforms pass through a circular model and converge into a cleaner output signal.</desc>
+            <defs>
+              <linearGradient id="signal-gradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ef5b3f"/>
+                <stop offset="1" stop-color="#008f83"/>
+              </linearGradient>
+              <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="7" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+
+            <g class="grid-lines" aria-hidden="true">
+              <path d="M40 80H720M40 170H720M40 260H720M40 350H720M40 440H720"/>
+              <path d="M100 40V480M240 40V480M380 40V480M520 40V480M660 40V480"/>
+            </g>
+
+            <g class="input-waves" aria-hidden="true">
+              <path d="M48 205 C82 205 82 120 116 120 S150 288 184 288 S218 166 252 166 S286 228 320 228"/>
+              <path d="M48 267 C82 267 82 222 116 222 S150 310 184 310 S218 248 252 248 S286 279 320 279"/>
+              <path d="M48 325 C82 325 82 298 116 298 S150 350 184 350 S218 316 252 316 S286 333 320 333"/>
+            </g>
+
+            <circle class="model-orbit orbit-one" cx="385" cy="260" r="116"/>
+            <circle class="model-orbit orbit-two" cx="385" cy="260" r="84"/>
+            <circle class="model-core" cx="385" cy="260" r="51"/>
+            <path class="model-glyph" d="M357 260c14-31 27-31 42 0s29 31 43 0"/>
+
+            <g class="output-wave" aria-hidden="true" filter="url(#soft-glow)">
+              <path d="M448 260 C476 260 476 181 504 181 S532 339 560 339 S588 208 616 208 S644 298 672 298 S700 260 720 260"/>
+            </g>
+
+            <g class="signal-nodes" aria-hidden="true">
+              <circle cx="48" cy="205" r="4"/><circle cx="48" cy="267" r="4"/><circle cx="48" cy="325" r="4"/>
+              <circle cx="720" cy="260" r="5"/>
+            </g>
+          </svg>
+
+          <p class="figure-note"><span>Fig. 01</span> Context-aware audio processing</p>
+        </div>
+      </section>
+
+      <section class="section research-section" id="research" aria-labelledby="research-heading">
+        <div class="section-heading">
+          <p class="section-index">01 / Research</p>
+          <h2 id="research-heading">Small models.<br>Human-scale problems.</h2>
+          <p>
+            My work combines signal processing, perceptual models, and data-driven
+            methods to investigate audio systems that are useful outside the lab.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="card-number">01</span>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M5 32h7l5-18 8 37 8-31 7 23 6-11h13"/></svg>
+            </div>
+            <h3>Speech enhancement</h3>
+            <p>Adaptive noise-reduction systems that exploit context while respecting the computational limits of hearing devices.</p>
+          </article>
+
+          <article class="research-card">
+            <span class="card-number">02</span>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M31 7c-11 0-19 9-19 21 0 8 4 13 10 17 4 3 4 8 9 10 7 3 13-1 13-8 0-6-6-8-10-6-5 2-10-1-10-6 0-4 3-7 8-7 4 0 7-3 7-7 0-5-3-8-8-8"/><path d="M46 16c7 8 7 24 0 32"/></svg>
+            </div>
+            <h3>Auditory modelling</h3>
+            <p>Efficient neural emulators of the auditory pathway, designed to retain behaviour across frequency, level, and hearing loss.</p>
+          </article>
+
+          <article class="research-card">
+            <span class="card-number">03</span>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="16" cy="18" r="5"/><circle cx="47" cy="13" r="5"/><circle cx="49" cy="44" r="5"/><circle cx="20" cy="49" r="5"/><circle cx="33" cy="31" r="6"/><path d="m20 20 9 8m8-1 7-10m-7 9 9 14m-18-5-5 10"/></svg>
+            </div>
+            <h3>Contextual adaptation</h3>
+            <p>Understanding which acoustic and listener-specific cues allow compact models to specialise effectively.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-heading">
+        <div class="work-intro">
+          <p class="section-index">02 / Selected work</p>
+          <h2 id="work-heading">A few things<br>I have worked on.</h2>
+          <p>Selected publications and accompanying research artefacts. For the full record, see my external profiles below.</p>
+        </div>
+
+        <div class="work-list">
+          <article class="work-item">
+            <div class="work-year">2026</div>
+            <div class="work-copy">
+              <p class="work-type">Preprint · Neural speech enhancement</p>
+              <h3>Ranking the Impact of Contextual Specialization in Neural Speech Enhancement</h3>
+              <p>Examining speaker identity, noise, language, gender, and SNR to determine where model specialisation provides meaningful gains.</p>
+              <p class="authors">with S. Feldt, Z.-H. Tan, J. Østergaard, and J. Jensen</p>
+            </div>
+            <div class="work-links">
+              <a href="https://arxiv.org/abs/2607.04826" target="_blank" rel="noreferrer" aria-label="Read Ranking the Impact of Contextual Specialization on arXiv">Paper <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="work-item featured-work">
+            <div class="work-year">2024</div>
+            <div class="work-copy">
+              <p class="work-type">IEEE/ACM TASLP · Auditory modelling</p>
+              <h3>How to Train Your Ears</h3>
+              <p>Neural auditory-model emulation for large-dynamic-range inputs and mild-to-severe hearing losses.</p>
+              <p class="authors">with J. Jensen, Z.-H. Tan, J. Østergaard, and L. Bramsløw</p>
+            </div>
+            <div class="work-links">
+              <a href="https://arxiv.org/abs/2403.10428" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/P-Leer/HowToTrainYourEars" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-year">2024</div>
+            <div class="work-copy">
+              <p class="work-type">Hearing technology · Listening study</p>
+              <h3>Hearing-Loss Compensation Using Deep Neural Networks</h3>
+              <p>A framework for auditory-model-based hearing-loss compensation, evaluated with hearing-impaired listeners.</p>
+              <p class="authors">with J. Jensen, L. H. Carney, Z.-H. Tan, J. Østergaard, and L. Bramsløw</p>
+            </div>
+            <div class="work-links">
+              <a href="https://arxiv.org/abs/2403.10420" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-heading">
+        <div class="about-aside">
+          <p class="section-index">03 / About</p>
+          <div class="portrait-mark" aria-hidden="true">
+            <span>PL</span>
+            <svg viewBox="0 0 220 220"><circle cx="110" cy="110" r="96"/><path d="M14 110h48c18 0 18-34 36-34s18 68 36 68 18-34 36-34h36"/></svg>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <h2 id="about-heading">Research should survive contact with the real world.</h2>
+          <p class="about-lead">
+            I am a scientist at Eriksholm Research Centre, working on artificial
+            intelligence for speech enhancement and hearing technology.
+          </p>
+          <p>
+            My research asks how detailed knowledge of hearing, acoustic context,
+            and individual listeners can lead to better signal-processing systems.
+            I am particularly interested in methods that remain effective when
+            compute, data, and latency are constrained.
+          </p>
+          <a class="text-link" href="https://www.eriksholm.com/people/peter-leer-bysted/" target="_blank" rel="noreferrer">Profile at Eriksholm <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <p class="section-index">04 / Connect</p>
+        <div class="contact-layout">
+          <h2 id="contact-heading">Let’s exchange<br><em>signals.</em></h2>
+          <div class="contact-copy">
+            <p>For research conversations, collaborations, or speaking inquiries, connect with me through one of the profiles below.</p>
+            <div class="contact-links">
+              <a href="https://github.com/P-Leer" target="_blank" rel="noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+              <a href="https://www.linkedin.com/in/peterleer/" target="_blank" rel="noreferrer"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+              <a href="https://dl.acm.org/profile/99661235269" target="_blank" rel="noreferrer"><span>ACM profile</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Peter Leer</p>
+      <p>Research in audio, hearing, and machine learning.</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
